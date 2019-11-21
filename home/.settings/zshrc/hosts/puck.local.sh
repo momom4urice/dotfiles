@@ -1,1 +1,1 @@
-../../../../../../../.settings/zshrc/hosts/puck.sh
+puck.sh

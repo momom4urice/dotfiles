@@ -1,1 +1,1 @@
-#source ${HOME}/.settings/profile
+source ${HOME}/.settings/profile

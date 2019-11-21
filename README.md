@@ -1,4 +1,4 @@
-# My Homeshick dotfiles repo
+# My homeshick dotfiles repo
 
 ## Requirements
 
@@ -12,4 +12,4 @@
 - [cdargs](http://www.skamphausen.de/cgi-bin/ska/CDargs)* (completion available)
 - [miniconda](https://docs.conda.io/en/latest/miniconda.html) (completion available)
 
-\* Install via Linux distro package manager or [Homebrew](https://brew.sh) on MacOS)
+\* Install via Linux distro package manager or [Homebrew](https://brew.sh) on MacOS

@@ -1,0 +1,10 @@
+# Define hostname-based hash table for config
+typeset -A config
+HOSTNAME=`hostname`
+SYSTEM=`uname -s`
+
+## Setup host-specific config values
+source $HOME/.settings/zshrc/hosts/${HOSTNAME}.sh
+
+## Setup system-specific config values
+source $HOME/.settings/zshrc/systems/${SYSTEM}.sh

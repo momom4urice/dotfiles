@@ -18,6 +18,42 @@
 
 ## Additional configuration details
 
+### Quick restore (on MacOS)
+
+1. Install zsh
+   ```
+   $ brew install zsh
+   ```
+2. Install prezto
+   ```
+   zsh
+   ```
+   ```
+   git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
+   ```
+   ```
+   setopt EXTENDED_GLOB
+   for rcfile in "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/^README.md(.N); do
+       ln -s "$rcfile" "${ZDOTDIR:-$HOME}/.${rcfile:t}"
+   done
+   ```
+   ```
+   chsh -s /bin/zsh
+   ```
+3. Install homeshick
+   ```
+   git clone git://github.com/andsens/homeshick.git $HOME/.homesick/repos/homeshick
+   ```
+4. Install spaceship-prompt
+   ```
+   cd $ZPREZTODIR
+   git clone --recurse-submodules https://github.com/belak/prezto-contrib contrib
+   ```
+5. [Sync the homeshick castle](https://github.com/andsens/homeshick/wiki/Tutorials#adding-other-machines)
+   ```
+   $HOME/.homesick/repos/homeshick/bin/homeshick clone momom4urice/dotfiles
+   ```
+
 ### Disable Conda's prompt modifications
 
 If Conda's PS1 modifications annoy you (might be the case if you use the spaceship-prompt), edit `~/.condarc` and add the following lines:
@@ -28,7 +64,9 @@ See [here](https://conda.io/projects/conda/en/latest/user-guide/configuration/us
 
 ### spaceship-prompt configuration
 
-This configuration is used:
+![Prompt](prompt.png)
+
+The following configuration is used:
 ```bash
 ZSH_THEME="spaceship"
 SPACESHIP_PROMPT_ADD_NEWLINE=false

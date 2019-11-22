@@ -9,11 +9,10 @@
 [[ -o INTERACTIVE && -t 2 ]] && {
 
 SAYINGS=(
-    "So long and thanks for all the fish.\n  -- Douglas Adams"
-    "Good morning! And in case I don't see ya, good afternoon, good evening and goodnight.\n  --Truman Burbank"
+    "Quand on est mort... écoutez ça... quand on est mort, c'est pour longtemps.\n  -- E. Zola"
 )
 
-# Print a randomly-chosen message:
+Print a randomly-chosen message:
 echo $SAYINGS[$(($RANDOM % ${#SAYINGS} + 1))]
 
 } >&2

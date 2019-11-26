@@ -9,4 +9,3 @@ fi
 
 # Source custom config
 source $HOME/.settings/profile
-

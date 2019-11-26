@@ -9,3 +9,4 @@ config[miniconda]=$HOME/miniconda3
 # Homebrew & Macports
 config[macports]="no"
 config[homebrew]="yes"
+

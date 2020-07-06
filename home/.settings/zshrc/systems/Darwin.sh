@@ -42,10 +42,8 @@ if [ -n "${config[applications_directory]+1}" ]; then
     export PATH=${config[applications_directory]}/bin:$PATH
 fi
 
-# cdargs completion
-if hash cdargs 2>/dev/null; then
-    source /usr/local/Cellar/cdargs/2.0/contrib/cdargs-bash.sh
-fi
+# apparish bookmark system
+source ${config[settings_directory]}/apparish/apparish.sh
 
 # iTerm2 integration
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"

@@ -44,9 +44,8 @@ fi
 
 # cdargs completion
 if hash cdargs 2>/dev/null; then
-    source /usr/local/Cellar/cdargs/1.35/contrib/cdargs-bash.sh
+    source /usr/local/Cellar/cdargs/2.0/contrib/cdargs-bash.sh
 fi
 
 # iTerm2 integration
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-

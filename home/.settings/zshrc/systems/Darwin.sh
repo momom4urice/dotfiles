@@ -42,6 +42,11 @@ if [ -n "${config[applications_directory]+1}" ]; then
     export PATH=${config[applications_directory]}/bin:$PATH
 fi
 
+# direnv local environment management system
+if hash direnv 2>/dev/null; then
+    eval "$(direnv hook zsh)"
+fi
+
 # apparish bookmark system
 source ${config[settings_directory]}/apparish/apparish.sh
 

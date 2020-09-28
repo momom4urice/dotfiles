@@ -8,18 +8,6 @@ if [ -n "${config[source_directory]+1}" ]; then
     export SOURCE_DIRECTORY=${config[source_directory]}
 fi
 
-# Path setting: Macports
-if [ -n "${config[macports]+1}" ]; then
-    export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
-    export MANPATH="/opt/local/share/man:$MANPATH"
-fi
-
-# Path setting: Homebrew
-if [ -n "${config[homebrew]+1}" ]; then
-    export PATH="/usr/local/sbin:$PATH"
-    export MANPATH="/usr/local/share/man:$MANPATH"
-fi
-
 # Path setting: Miniconda
 if [ -n "${config[miniconda]+1}" ]; then
     source ${config[miniconda]}/bin/activate

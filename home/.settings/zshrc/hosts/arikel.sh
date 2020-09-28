@@ -8,8 +8,3 @@ config[miniconda]=$HOME/miniconda3
 
 # Go
 config[go]=$HOME/go
-
-# Homebrew & Macports
-config[macports]="no"
-config[homebrew]="yes"
-

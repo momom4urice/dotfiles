@@ -9,7 +9,7 @@
 [[ -o INTERACTIVE && -t 2 ]] && {
 
 SAYINGS=(
-    "Quand on est mort... écoutez ça... quand on est mort, c'est pour longtemps.\n  -- E. Zola"
+    "Bye!"
 )
 
 Print a randomly-chosen message:

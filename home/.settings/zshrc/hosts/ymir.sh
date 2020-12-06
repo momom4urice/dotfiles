@@ -3,6 +3,10 @@ config[settings_directory]=$HOME/.settings
 config[applications_directory]=$HOME/Applications
 config[source_directory]=$HOME/Documents/src
 
+# Text editors
+export VISUAL="vim"
+export EDITOR="vim"
+
 # Miniconda
 config[miniconda]=$HOME/miniconda3
 

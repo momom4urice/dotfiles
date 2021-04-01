@@ -138,7 +138,7 @@ php           # PHP section
 rust          # Rust section
 haskell       # Haskell Stack section
 julia         # Julia section
-docker        # Docker section
+# docker        # Docker section
 aws           # Amazon Web Services section
 dotnet        # .NET section
 ember         # Ember.js section

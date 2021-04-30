@@ -8,7 +8,7 @@ export VISUAL="vim"
 export EDITOR="vim"
 
 # Miniconda
-config[miniconda]=$HOME/miniconda3
+config[miniconda]=$HOME/miniforge3
 
 # Go
 config[go]=$HOME/go

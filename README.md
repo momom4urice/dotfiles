@@ -11,7 +11,7 @@
 
 ## Supported Software
 
-- [apparix, in its 100% shell flavour](https://github.com/micans/bash-utils/) (completion available out of the box)
+- [apparix, in its 100% shell flavour](https://github.com/micans/apparix/) (completion available out of the box)
 - [miniconda](https://docs.conda.io/en/latest/miniconda.html) (completion available out of the box, see [here](https://github.com/esc/conda-zsh-completion) to update)
 
 \* Install via Linux distro package manager or [Homebrew](https://brew.sh) on MacOS

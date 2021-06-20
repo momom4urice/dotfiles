@@ -3,11 +3,23 @@ config[settings_directory]=$HOME/.settings
 config[applications_directory]=$HOME/Applications
 config[source_directory]=$HOME/Documents/src
 
+# Pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init --path)"
+eval "$(pyenv init -)"
+
+# Pipx
+export PATH="$PATH:$HOME/.local/bin"
+
 # Miniconda
 config[miniconda]=$HOME/miniforge3
 
 # Go
 config[go]=$HOME/go
+
+# linuxbrew
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
 # WSL: X Server configuration
 # From Ubuntu wiki: https://doc.ubuntu-fr.org/wsl#parametrage_du_serveur_x_de_vcxsrv

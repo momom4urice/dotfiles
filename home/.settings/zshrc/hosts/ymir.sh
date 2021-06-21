@@ -10,6 +10,15 @@ export EDITOR="vim"
 # Miniconda
 config[miniconda]=$HOME/miniforge3
 
+# Pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init --path)"
+eval "$(pyenv init -)"
+
+# Pipx
+export PATH="$PATH:$HOME/.local/bin"
+
 # Go
 config[go]=$HOME/go
 

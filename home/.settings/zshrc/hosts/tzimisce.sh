@@ -18,4 +18,4 @@ export DISPLAY=$(grep -oP "(?<=nameserver ).+" /etc/resolv.conf):0
 export LIBGL_ALWAYS_INDIRECT=1
 # Fix blurry fonts: https://superuser.com/questions/1370361/blurry-fonts-on-using-windows-default-scaling-with-wsl-gui-applications-hidpi
 # export GDK_SCALE=0.5
-export GDK_DPI_SCALE=1.10
+export GDK_DPI_SCALE=0.95
